@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.3">
+    <root id="1"/>
+    <schema id="2" parent="1" name="employee">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sys"/>
+    <table id="7" parent="2" name="dept"/>
+    <table id="8" parent="2" name="emp"/>
+    <table id="9" parent="2" name="toy"/>
+    <column id="10" parent="7" name="DEPTNO">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="11" parent="7" name="DNAME">
+      <Position>2</Position>
+      <DataType>varchar(14)|0</DataType>
+    </column>
+    <column id="12" parent="7" name="LOC">
+      <Position>3</Position>
+      <DataType>varchar(13)|0</DataType>
+    </column>
+    <key id="13" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>DEPTNO</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="14" parent="8" name="EMPNO">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="15" parent="8" name="ENAME">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="16" parent="8" name="JOB">
+      <Position>3</Position>
+      <DataType>varchar(9)|0</DataType>
+    </column>
+    <column id="17" parent="8" name="MGR">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="18" parent="8" name="HIREDATE">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="19" parent="8" name="SAL">
+      <Position>6</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="20" parent="8" name="COMM">
+      <Position>7</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="21" parent="8" name="DEPTNO">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="22" parent="8" name="DEPTNO">
+      <ColNames>DEPTNO</ColNames>
+    </index>
+    <key id="23" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>EMPNO</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="24" parent="8" name="emp_ibfk_1">
+      <ColNames>DEPTNO</ColNames>
+      <RefSchemaName>employee</RefSchemaName>
+      <RefTableName>dept</RefTableName>
+      <RefColNames>DEPTNO</RefColNames>
+    </foreign-key>
+    <column id="25" parent="9" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="9" name="name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="9" name="price">
+      <Position>3</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="28" parent="9" name="create_date">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <key id="29" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

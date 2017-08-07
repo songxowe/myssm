@@ -27,8 +27,18 @@ IntelliJ IDEA + git + github:
 8.右击工程名 - Git - Repostory - Pull
   此步骤完成 Github 到 本地 (README.md 下载到本地)
   
-9.新增本地项目中的文件
-  修改本地项目中的文件
+9.新增本地项目中的文件 (Add - Commit File... - Commit and Push)
+  修改本地项目中的文件 (Commit File... - Commit and Push)
   
-10.右击文件 - Git - Commit File..- Commit and Push
+10.右击文件 - Git - Commit File... - Commit and Push
   此步骤完成 本地 到 Github
+  
+  
+  
+团队开发:
+1.Github 上新建组织
+2.邀请成员
+3.设置权限
+4.新建版本库/项目
+5.VCS - Checkout from Version Control - GitHub
+  Click Clone [可更改项目名] 
